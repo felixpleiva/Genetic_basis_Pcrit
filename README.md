@@ -1,4 +1,4 @@
-# Genetic basis of hypoxia tolerance in fishes
+# Evolution of oxygen-sensing genes parallels hypoxia tolerance in fishes
 
 We will add the files to this GitHub repository just before the MS submission
 
