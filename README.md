@@ -13,7 +13,7 @@ This repository contains code and data needed to reproduce the manuscript by Bab
 The authors provide this repository under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Metadata
-The [metadata](https://github.com/felixpleiva/Genetic_basis_Pcrit/blob/main/Metadata) describe each of the data files in detail.
+The [metadata](https://github.com/felixpleiva/Genetic_basis_Pcrit/blob/main/Metadata.txt) describe each of the data files in detail.
 
 ## Folders:
 [`R`](https://github.com/felixpleiva/Genetic_basis_Pcrit/blob/main/R): contains all R code to generate most of the figures and reproduce the results of the analyses of our study.
