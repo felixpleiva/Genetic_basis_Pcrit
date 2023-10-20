@@ -4,7 +4,7 @@ This repository contains code and data needed to reproduce the manuscript by Bab
 
 ## Cite the repository as:
 
-Babin CH, Leiva FP, Verberk WCEP & Rees BB. (2023). Paper data and code of manuscript: Evolution of oxygen-sensing genes parallels hypoxia tolerance in fishes. Zenodo.
+Babin CH, Leiva FP, Verberk WCEP & Rees BB. (2023). Paper data and code of manuscript: Evolution of oxygen-sensing genes parallels hypoxia tolerance in fishes. Zenodo. https://doi.org/10.5281/zenodo.10026472.
 
 ## For any further information, please contact
 * [`Courtney H. Babin`](http://cas.loyno.edu/biology/bios/courtney-babin)
