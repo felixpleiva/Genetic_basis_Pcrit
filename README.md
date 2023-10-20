@@ -15,9 +15,6 @@ Babin CH, Leiva FP, Verberk WCEP & Rees BB. (2023). Paper data and code of manus
 ## Licence
 The authors provide this repository under the [MIT License](https://opensource.org/licenses/MIT).
 
-## Metadata
-The [metadata](https://github.com/felixpleiva/Genetic_basis_Pcrit/blob/main/Metadata.txt) describe each of the data files in detail.
-
 ## Folders:
 [`R`](https://github.com/felixpleiva/Genetic_basis_Pcrit/blob/main/R): contains all R code to generate most of the figures and reproduce the results of the analyses of our study.
 * [`nombre del script`](https://github.com/felixpleiva/Genetic_basis_Pcrit/blob/main/R/nombredelscript): this R script is for...
