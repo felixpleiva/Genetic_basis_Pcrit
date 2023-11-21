@@ -1,4 +1,4 @@
-################################################################################
+#------------------------------------------------------------------------------
 # Script to fit phylogenetic multilevel model using brms and extract corrected
 # Pcrit for a given list of species. It is an modified version of the code published in 
 #------------------------------------------------------------------------------
@@ -21,6 +21,8 @@ library(tidybayes)
 library(bayestestR)
 library(ggplot2)
 library(corrplot)
+#install.packages("StanHeaders", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
+#install.packages("rstan", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
 # ------------------------------------------------------------------------------
 set.seed(6955)# we need this to replicate the results
 # ------------------------------------------------------------------------------
@@ -65,8 +67,6 @@ tree<-drop.tip(tree, setdiff(tree$tip.label, d$animal))
 # check again
 setdiff(d$animal, as.character(tree$tip.label))#listed in our database but not in the tree
 setdiff(as.character(tree$tip.label),d$animal)# listed in the tree but not in our database
-
-# uffff, now we have the same species sin the tree and the dataframe
 
 # ------------------------------------------------------------------------------
 #count number of species to be included in the model
@@ -122,11 +122,10 @@ priors1=c(
 # 
 # #-----------------------------------------------------------------------------
 # fit and run the model using the same predictors as in Verberk et al 2022.
-# Running time is about 4 hours!!!!!
-
+# Running time is about 4 hours in a normal laptop!!!!!
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-#  If you do NOT want to wait so long and load the .rds file below
+#  If you do NOT want to wait so long, just load the .rds file below
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 best_model_final <- brm(
@@ -142,12 +141,12 @@ best_model_final <- brm(
  prior = priors1,
  sample_prior = TRUE,
  chains = 3, cores = 2,
- iter = 150, warmup = 75,
+ iter = 15000, warmup = 7500,
  control = list(adapt_delta = 0.999, max_treedepth = 20),
  save_pars = save_pars(all = TRUE))
  
- 
-# # save the model run
+
+# save the model run
 # saveRDS(best_model,"best_model.rds")
 
 # Models are saved so that they don't need to be rerun for every session. 
@@ -194,7 +193,6 @@ summary(lm(animal_Random~species_Random))# random effects are correlated
 
 # check te test temp we have
 summary(d$temp_test) #15,24,28
-
 
 # 15 centigrade
 d$pcrit_predicted15   <-  intercept+(temp_test_Slope * (15)) +
