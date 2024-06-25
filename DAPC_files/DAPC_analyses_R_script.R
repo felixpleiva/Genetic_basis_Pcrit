@@ -18,6 +18,7 @@ for(i in 1:ncol(HIF1A_setup)) {                                   # Replace NA i
 }
 
 #clustering HIF1A_setup using min, retain all PCs in graph
+grp1 <- find.clusters(data, criterion = "min", choose.n.clust=FALSE, n.iter=1000000, n.start=10000)
 50
 grp1
 
@@ -53,7 +54,7 @@ var_cont=data.frame(dapc1$var.contr)
 write.csv(var_cont, file="var_cont.csv")
 
 #loading plots for each axis (each LD) showing variable contribution with threshold of 0.90)
-#change axix = number for whichever LD you want variable contributions 
+#change axis = number for whichever LD you want variable contributions 
 contrib <- loadingplot(dapc1$var.contr, threshold=quantile(dapc1$var.contr,0.90), axis = 1)
 
 contrib

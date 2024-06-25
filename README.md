@@ -24,3 +24,4 @@ The authors provide this repository under the [MIT License](https://opensource.o
 
 [`standardized_Pcrit`](https://github.com/felixpleiva/Genetic_basis_Pcrit/blob/main/standardized_Pcrit): contain the data and R script to standardize Pcrit values at three temperatures for 174 fishes. The material in this folder is an extension of those already published in [Global Change Biology](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.16319), and which is publicly available at this [link](https://zenodo.org/records/6341504).
 
+[`PGLS_files`](https://github.com/felixpleiva/Genetic_basis_Pcrit/blob/main/PGLS_files): encompasses all essential files and scripts required for implementing and fitting phylogenetic generalized least squares (PGLS) models. 
