@@ -4,7 +4,7 @@ This repository contains code and data needed to reproduce the manuscript by Bab
 
 ## Cite the repository as:
 
-Babin CH, Leiva FP, Verberk WCEP & Rees BB. (2023). Paper data and code of manuscript: Evolution of key oxygen-sensing genes is associated with hypoxia tolerance in fishes. Zenodo. https://doi.org/10.5281/zenodo.10026472.
+Babin CH, Leiva FP, Verberk WCEP & Rees BB. (2023). Paper data and code of manuscript: Evolution of key oxygen-sensing genes is associated with hypoxia tolerance in fishes. Zenodo. https://doi.org/10.5281/zenodo.10026473.
 
 ## For any further information, please contact
 * [`Courtney H. Babin`](http://cas.loyno.edu/biology/bios/courtney-babin)
